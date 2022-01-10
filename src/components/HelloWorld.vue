@@ -21,7 +21,7 @@
         <v-select :items="items" label="相手キャラを選択">{{ select.character }}</v-select>
 
         <!-- 入力部分 -->
-        <input class="word" type="text" list="item" placeholder="相手キャラを入力"/>
+        相手キャラ→<input class="word" type="text" list="item" placeholder="相手キャラを入力"/>
 
         <!-- リスト部分 -->
         <datalist id="item">
@@ -34,7 +34,7 @@
       <v-col class="mb-5" cols="12">
         <p>
           <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
-          {{ select.character }}の場合、
+          {{ select.character }}の場合、ジャンプ投げ空上は{{ select.J }}、２段ジャンプ空上は{{ select.JJ }}で確定します
         </p>
       </v-col>
 
