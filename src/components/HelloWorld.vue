@@ -23,18 +23,36 @@
         <!-- 入力部分 -->
         相手キャラ→<input class="word" type="text" list="item" placeholder="相手キャラを入力"/>
 
-        <!-- リスト部分 -->
+        <!-- リスト部分 value=マリオなどが入る-->
         <datalist id="item">
-          <option value="マリオ"></option>
+          <option value="mario"></option>
           <option value="ドンキーコング"></option>
           <option value="リンク"></option>
         </datalist>
+
+
+        <v-col cols="12">
+          <v-autocomplete
+            v-model="value"
+            :items="items"
+            dense
+            filled
+            label="Filled"
+          ></v-autocomplete>
+        </v-col>
       </v-col>
 
       <v-col class="mb-5" cols="12">
         <p>
           <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
           {{ select.character }}の場合、ジャンプ投げ空上は{{ select.J }}、２段ジャンプ空上は{{ select.JJ }}で確定します
+        </p>
+      </v-col>
+
+            <v-col class="mb-5" cols="12">
+        <p>
+          <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
+          {{ value.character }}の場合、ジャンプ投げ空上は{{ value.J }}、２段ジャンプ空上は{{ value.JJ }}で確定します
         </p>
       </v-col>
 
@@ -55,13 +73,21 @@ export default {
 
   data: () => ({
 
-    select: [
+    select: 
       {"character": "マリオ",
         "J": "~65%",
         "JJ": "~76%"
       },
 
-    ],
+      select_list: [
+        {"character": "マリオ"}
+      ],
+
+      value:
+      {"character": "マリオ",
+        "J": "~65%",
+        "JJ": "~76%"
+      },
 
     items: [
       "マリオ",
