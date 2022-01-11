@@ -13,25 +13,8 @@
       <v-col class="mb-4">
         <h1 class="display-1 font-weight-bold mb-3">リフコン％表示ツール</h1>
 
-        <v-text-field
-          label="相手キャラを入力"
-          placeholder="マリオ"
-        ></v-text-field>
-
-        <v-select :items="items" label="相手キャラを選択">{{ select.character }}</v-select>
-
-        <!-- 入力部分 -->
-        相手キャラ→<input class="word" type="text" list="item" placeholder="相手キャラを入力"/>
-
-        <!-- リスト部分 value=マリオなどが入る-->
-        <datalist id="item">
-          <option value="mario"></option>
-          <option value="ドンキーコング"></option>
-          <option value="リンク"></option>
-        </datalist>
-
-
         <v-col cols="12">
+          <!-- 変数valueにキャラ名(マリオ)が入る -->
           <v-autocomplete
             v-model="value"
             :items="items"
@@ -43,16 +26,13 @@
       </v-col>
 
       <v-col class="mb-5" cols="12">
-        <p>
+        <!-- メソッドで％のfunction作るifマリオ→50% -->
+        <p v-if="value !== null">
           <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
-          {{ select.character }}の場合、ジャンプ投げ空上は{{ select.J }}、２段ジャンプ空上は{{ select.JJ }}で確定します
+          {{ value }}の場合、ジャンプ投げ空上は{{ jump() }}、２段ジャンプ空上は{{ jump2() }}で確定します
         </p>
-      </v-col>
-
-            <v-col class="mb-5" cols="12">
-        <p>
-          <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
-          {{ value.character }}の場合、ジャンプ投げ空上は{{ value.J }}、２段ジャンプ空上は{{ value.JJ }}で確定します
+        <p v-else>
+          キャラを選択してください
         </p>
       </v-col>
 
@@ -72,23 +52,7 @@ export default {
   name: "HelloWorld",
 
   data: () => ({
-
-    select: 
-      {"character": "マリオ",
-        "J": "~65%",
-        "JJ": "~76%"
-      },
-
-      select_list: [
-        {"character": "マリオ"}
-      ],
-
-      value:
-      {"character": "マリオ",
-        "J": "~65%",
-        "JJ": "~76%"
-      },
-
+    value: null,
     items: [
       "マリオ",
       "ドンキーコング",
@@ -127,13 +91,53 @@ export default {
       "リザードン",
       "ディディーコング",
       "リュカ",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
+      "ソニック",
+      "デデデ",
+      "ピクミン＆オリマー",
+      "ルカリオ",
+      "ロボット",
+      "トゥーンリンク",
+      "ウルフ",
+      "むらびと",
+      "ロックマン",
+      "Wii Fit トレーナー",
+      "Wii Fir トレーナー　腹式呼吸",
+      "ロゼッタ＆チコ",
+      "リトル・マック",
+      "ゲッコウガ",
+      "パルテナ",
+      "パックマン",
+      "ルフレ",
+      "シュルク通常/疾",
+      "シュルク翔/斬",
+      "シュルク盾",
+      "シュルク撃",
+      "クッパ Jr.",
+      "ダックハント",
+      "リュウ/ケン",
+      "クラウド",
+      "カムイ",
+      "ベヨネッタ",
+      "インクリング",
+      "リドリー",
+      "シモン/リヒター",
+      "キングクルール",
+      "しずえ",
+      "ガオガエン",
+      "パックンフラワー",
+      "ジョーカー",
+      "勇者",
+      "勇者バイキルト",
+      "勇者ピオリム",
+      "バンジョー＆カズーイ",
+      "テリー",
+      "べレト/ベレス",
+      "ミェンミェン",
+      "スティーブ",
+      "セフィロス",
+      "格闘Mii",
+      "剣術Mii",
+      "射撃Mii",
     ],
 
     ecosystem: [
@@ -186,7 +190,21 @@ export default {
         href: "https://vuetifyjs.com/getting-started/frequently-asked-questions",
       },
     ],
+    
   }),
+  methods: {
+    jump:function(){
+      console.log(this.value);
+      if(this.value == "マリオ"){
+        return "~65%"
+      }
+    },
+    jump2:function(){
+        if(this.value == "マリオ"){
+        return "~76%"
+      }
+    }
+  }
 };
 </script>
 
