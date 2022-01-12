@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/donkey.png')"
           class="my-3"
           contain
           height="200"
@@ -27,13 +27,13 @@
 
       <v-col class="mb-5" cols="12">
         <!-- メソッドで％のfunction作るifマリオ→50% -->
-        <p v-if="value !== null">
+        <p class="font-weight-medium" v-if="value !== null">
           <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
-          {{ value }}の場合、ジャンプ投げ空上は{{ jump() }}、２段ジャンプ空上は{{ jump2() }}で確定します
+          {{ value }}の場合、<br>ジャンプ投げ空上は{{ jump() }}、<br>２段ジャンプ空上は{{ jump2() }}で確定します
           <br>
-          ポケスタ２台上の場合、ジャンプ投げ空上は{{ poke() }}、２段ジャンプ空上は{{ poke2() }}で確定します。
+          ポケスタ２台上の場合、<br>ジャンプ投げ空上は{{ poke() }}、<br>２段ジャンプ空上は{{ poke2() }}で確定します。
         </p>
-        <p v-else>
+        <p class="font-weight-medium" v-else>
           キャラを選択してください
         </p>
       </v-col>
@@ -59,7 +59,6 @@ export default {
       "マリオ",
       "ドンキーコング",
       "サムス/ダークサムス",
-      "ダークサムス",
       "ヨッシー",
       "カービィ",
       "フォックス",

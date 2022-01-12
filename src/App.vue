@@ -10,31 +10,18 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          :src="image_src"
           transition="scale-transition"
-          width="40"
+          width="50"
         />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">ドンキー確定コンボ帯</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        <span class="mr-2 font-weight-bold">スマコン</span>
+        
+      
     </v-app-bar>
 
     <v-main>
@@ -55,6 +42,8 @@ export default {
 
   data: () => ({
     //
+    image_src: require("/Users/canon/workspace/vue/smash/src/assets/mini.png")
+  
   }),
 };
 </script>
