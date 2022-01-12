@@ -10,7 +10,7 @@
         />
       </v-col>
 
-      <v-col class="mb-4">
+      
         <h1 class="display-1 font-weight-bold mb-3">リフコン％表示ツール</h1>
 
         <v-col cols="12">
@@ -23,19 +23,38 @@
             label="相手キャラを入力してください"
           ></v-autocomplete>
         </v-col>
-      </v-col>
+      
+      
 
-      <v-col class="mb-5" cols="12">
+      <v-col class="mb-2" cols="12">
         <!-- メソッドで％のfunction作るifマリオ→50% -->
-        <p class="font-weight-medium" v-if="value !== null">
+        <div class="font-weight-bold text-left" v-if="value !== null">
           <!-- {{マリオ}}の場合、ジャンプ投げ空上は{{~65%}}、２段ジャンプ空上は{{~76%}}で確定します -->
-          {{ value }}の場合、<br>ジャンプ投げ空上は{{ jump() }}、<br>２段ジャンプ空上は{{ jump2() }}で確定します
-          <br>
-          ポケスタ２台上の場合、<br>ジャンプ投げ空上は{{ poke() }}、<br>２段ジャンプ空上は{{ poke2() }}で確定します。
-        </p>
-        <p class="font-weight-medium" v-else>
+          {{ value }}の場合、
+            <p class="my-3">
+            ・ジャンプ投げ空上は <span class="text-h4 font-weight-black">{{ jump() }}</span>、
+            </p>
+
+            <p>
+            ・２段ジャンプ空上は <span class="text-h4 font-weight-black">{{ jump2() }}</span>で確定します
+            </p>
+
+            <p>
+            ポケスタ台上の場合、
+            </p>
+
+            <p>
+            ・ジャンプ投げ空上は <span class="text-h4 font-weight-black">{{ poke() }}</span>、
+            </p>
+
+            <p>
+            ・２段ジャンプ空上は <span class="text-h4 font-weight-black">{{ poke2() }}</span>で確定します。
+            </p>
+          
+        </div>
+        <div class="font-weight-medium" v-else>
           キャラを選択してください
-        </p>
+        </div>
       </v-col>
 
       <v-col class="mb-5" cols="12">
