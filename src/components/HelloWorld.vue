@@ -32,8 +32,6 @@
           {{ value }}の場合、ジャンプ投げ空上は{{ jump() }}、２段ジャンプ空上は{{ jump2() }}で確定します
           <br>
           ポケスタ２台上の場合、ジャンプ投げ空上は{{ poke() }}、２段ジャンプ空上は{{ poke2() }}で確定します。
-          <br>
-          ポケスタ２台下/終点の場合、ジャンプ投げ空上は{{ end() }}、２段ジャンプ空上は{{ end() }}で確定します。
         </p>
         <p v-else>
           キャラを選択してください
@@ -116,7 +114,7 @@ export default {
       "シュルク翔/斬",
       "シュルク盾",
       "シュルク撃",
-      "クッパ Jr.",
+      "クッパJr.",
       "ダックハント",
       "リュウ/ケン",
       "クラウド",
@@ -294,51 +292,606 @@ export default {
       } else if(this.value == "Wii Fit トレーナー"){
         return "~68%"
       } else if(this.value == "Wii Fit トレーナー腹式呼吸"){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
-      } else if(this.value == ""){
-        return "~%"
+        return "~69%"
+      } else if(this.value == "ロゼッタ＆チコ"){
+        return "~58%"
+      } else if(this.value == "リトル・マック"){
+        return "~64%"
+      } else if(this.value == "ゲッコウガ"){
+        return "~61%"
+      } else if(this.value == "パルテナ"){
+        return "~65%"
+      } else if(this.value == "パックマン"){
+        return "~59%"
+      } else if(this.value == "ルフレ"){
+        return "~71%"
+      } else if(this.value == "シュルク通常/疾"){
+        return "~73%"
+      } else if(this.value == "シュルク翔/斬"){
+        return "~69%"
+      } else if(this.value == "シュルク盾"){
+        return "~223%"
+      } else if(this.value == "シュルク撃"){
+        return "~33%"
+      } else if(this.value == "クッパJr."){
+        return "~74%"
+      } else if(this.value == "ダックハント"){
+        return "~59%"
+      } else if(this.value == "リュウ/ケン"){
+        return "~79%"
+      } else if(this.value == "クラウド"){
+        return "~70%"
+      } else if(this.value == "カムイ"){
+        return "~70%"
+      } else if(this.value == "ベヨネッタ"){
+        return "~66%"
+      } else if(this.value == "インクリング"){
+        return "~64%"
+      } else if(this.value == "リドリー"){
+        return "~86%"
+      } else if(this.value == "シモン/リヒター"){
+        return "~79%"
+      } else if(this.value == "キングクルール"){
+        return "~90%"
+      } else if(this.value == "しずえ"){
+        return "~61%"
+      } else if(this.value == "ガオガエン"){
+        return "~81%"
+      } else if(this.value == "パックンフラワー"){
+        return "~71%"
+      } else if(this.value == "ジョーカー"){
+        return "~67%"
+      } else if(this.value == "勇者"){
+        return "~70%"
+      } else if(this.value == "勇者バイキルト"){
+        return "~70%"
+      } else if(this.value == "勇者ピオリム"){
+        return "~50%"
+      } else if(this.value == "バンジョー＆カズーイ"){
+        return "~72%"
+      } else if(this.value == "テリー"){
+        return "~85%"
+      } else if(this.value == "べレト/ベレス"){
+        return "~64%"
+      } else if(this.value == "ミェンミェン"){
+        return "~74%"
+      } else if(this.value == "スティーブ"){
+        return "~64%"
+      } else if(this.value == "セフィロス"){
+        return "~53%"
+      } else if(this.value == "格闘Mii"){
+        return "~60%"
+      } else if(this.value == "剣術Mii"){
+        return "~63%"
+      } else if(this.value == "射撃Mii"){
+        return "~67%"
+      } else {
+        return "-"
       }
     },
-    jump2:function(){
-        if(this.value == "マリオ"){
-        return "~76%"
-      }else if(this.value == "ドンキーコング"){
-        return "~97%"
-      }
-    },
-    poke:function(){
 
+
+    jump2:function(){
+    if(this.value == "マリオ"){
+        return "~76%"
+      } else if(this.value == "ドンキーコング"){
+        return "~97%"
+      } else if(this.value == "リンク"){
+        return "~84%"
+      } else if(this.value == "サムス/ダークサムス"){
+        return "~90%"
+      } else if(this.value == "ヨッシー"){
+        return "~76%"
+      } else if(this.value == "カービィ"){
+        return "~70%"
+      } else if(this.value == "フォックス"){
+        return "~67%"
+      } else if(this.value == "ピカチュウ"){
+        return "~65%"
+      } else if(this.value == "ルイージ"){
+        return "~76%"
+      } else if(this.value == "ネス"){
+        return "~76%"
+      } else if(this.value == "キャプテン・ファルコン"){
+        return "~89%"
+      } else if(this.value == "プリン"){
+        return "~69%"
+      } else if(this.value == "ピーチ/デイジー"){
+        return "~73%"
+      } else if(this.value == "クッパ"){
+        return "~101%"
+      } else if(this.value == "アイスクライマー"){
+        return "~71%"
+      } else if(this.value == "シーク"){
+        return "~71%"
+      } else if(this.value == "ゼルダ"){
+        return "~70%"
+      } else if(this.value == "ドクターマリオ"){
+        return "~76%"
+      } else if(this.value == "ピチュー"){
+        return "~62%"
+      } else if(this.value == "ファルコ"){
+        return "~64%"
+      } else if(this.value == "マルス/ルキナ"){
+        return "~75%"
+      } else if(this.value == "こどもリンク"){
+        return "~74%"
+      } else if(this.value == "ガノンドロフ"){
+        return "~99%"
+      } else if(this.value == "ミュウツー"){
+        return "~73%"
+      } else if(this.value == "ロイ/クロム"){
+        return "~81%"
+      } else if(this.value == "Mr.ゲーム＆ウォッチ"){
+        return "~67%"
+      } else if(this.value == "メタナイト"){
+        return "~68%"
+      } else if(this.value == "ピット/ブラックピット"){
+        return "~77%"
+      } else if(this.value == "ゼロスーツサムス"){
+        return "~77%"
+      } else if(this.value == "ワリオ"){
+        return "~80%"
+      } else if(this.value == "スネーク"){
+        return "~96%"
+      } else if(this.value == "アイク"){
+        return "~89%"
+      } else if(this.value == "ゼニガメ"){
+        return "~64%"
+      } else if(this.value == "フシギソウ"){
+        return "~75%"
+      } else if(this.value == "リザードン"){
+        return "~92%"
+      } else if(this.value == "ディディーコング"){
+        return "~72%"
+      } else if(this.value == "リュカ"){
+        return "~77%"
+      } else if(this.value == "ソニック"){
+        return "~73%"
+      } else if(this.value == "デデデ"){
+        return "~99%"
+      } else if(this.value == "ピクミン＆オリマー"){
+        return "~62%"
+      } else if(this.value == "ルカリオ"){
+        return "~81%"
+      } else if(this.value == "ロボット"){
+        return "~94%"
+      } else if(this.value == "トゥーンリンク"){
+        return "~72%"
+      } else if(this.value == "ウルフ"){
+        return "~77%"
+      } else if(this.value == "むらびと"){
+        return "~72%"
+      } else if(this.value == "ロックマン"){
+        return "~82%"
+      } else if(this.value == "Wii Fit トレーナー"){
+        return "~79%"
+      } else if(this.value == "Wii Fit トレーナー腹式呼吸"){
+        return "~81%"
+      } else if(this.value == "ロゼッタ＆チコ"){
+        return "~69%"
+      } else if(this.value == "リトル・マック"){
+        return "~74%"
+      } else if(this.value == "ゲッコウガ"){
+        return "~72%"
+      } else if(this.value == "パルテナ"){
+        return "~77%"
+      } else if(this.value == "パックマン"){
+        return "~73%"
+      } else if(this.value == "ルフレ"){
+        return "~82%"
+      } else if(this.value == "シュルク通常/疾"){
+        return "~81%"
+      } else if(this.value == "シュルク翔/斬"){
+        return "~77%"
+      } else if(this.value == "シュルク盾"){
+        return "~243%"
+      } else if(this.value == "シュルク撃"){
+        return "~43%"
+      } else if(this.value == "クッパJr."){
+        return "~84%"
+      } else if(this.value == "ダックハント"){
+        return "~69%"
+      } else if(this.value == "リュウ/ケン"){
+        return "~92%"
+      } else if(this.value == "クラウド"){
+        return "~81%"
+      } else if(this.value == "カムイ"){
+        return "~82%"
+      } else if(this.value == "ベヨネッタ"){
+        return "~79%"
+      } else if(this.value == "インクリング"){
+        return "~78%"
+      } else if(this.value == "リドリー"){
+        return "~99%"
+      } else if(this.value == "シモン/リヒター"){
+        return "~93%"
+      } else if(this.value == "キングクルール"){
+        return "~101%"
+      } else if(this.value == "しずえ"){
+        return "~72%"
+      } else if(this.value == "ガオガエン"){
+        return "~98%"
+      } else if(this.value == "パックンフラワー"){
+        return "~86%"
+      } else if(this.value == "ジョーカー"){
+        return "~78%"
+      } else if(this.value == "勇者"){
+        return "~82%"
+      } else if(this.value == "勇者バイキルト"){
+        return "~80%"
+      } else if(this.value == "勇者ピオリム"){
+        return "~61%"
+      } else if(this.value == "バンジョー＆カズーイ"){
+        return "~83%"
+      } else if(this.value == "テリー"){
+        return "~98%"
+      } else if(this.value == "べレト/ベレス"){
+        return "~78%"
+      } else if(this.value == "ミェンミェン"){
+        return "~84%"
+      } else if(this.value == "スティーブ"){
+        return "~77%"
+      } else if(this.value == "セフィロス"){
+        return "~66%"
+      } else if(this.value == "格闘Mii"){
+        return "~69%"
+      } else if(this.value == "剣術Mii"){
+        return "~76%"
+      } else if(this.value == "射撃Mii"){
+        return "~80%"
+      } else {
+        return "-"
+      }
     },
+
+    poke:function(){
+      if(this.value == "マリオ"){
+        return "51%~"
+      } else if(this.value == "ドンキーコング"){
+        return "65%~"
+      } else if(this.value == "リンク"){
+        return "55%~"
+      } else if(this.value == "サムス/ダークサムス"){
+        return "57%~"
+      } else if(this.value == "ヨッシー"){
+        return "54%~"
+      } else if(this.value == "カービィ"){
+        return "42%~"
+      } else if(this.value == "フォックス"){
+        return "42~%"
+      } else if(this.value == "ピカチュウ"){
+        return "42%~"
+      } else if(this.value == "ルイージ"){
+        return "51%~"
+      } else if(this.value == "ネス"){
+        return "50%~"
+      } else if(this.value == "キャプテン・ファルコン"){
+        return "55%~"
+      } else if(this.value == "プリン"){
+        return "37%~"
+      } else if(this.value == "ピーチ/デイジー"){
+        return "48%~"
+      } else if(this.value == "クッパ"){
+        return "70%~"
+      } else if(this.value == "アイスクライマー"){
+        return "49%~"
+      } else if(this.value == "シーク"){
+        return "42%~"
+      } else if(this.value == "ゼルダ"){
+        return "46%~"
+      } else if(this.value == "ドクターマリオ"){
+        return "51%~"
+      } else if(this.value == "ピチュー"){
+        return "35%~"
+      } else if(this.value == "ファルコ"){
+        return "44%~"
+      } else if(this.value == "マルス/ルキナ"){
+        return "49%~"
+      } else if(this.value == "こどもリンク"){
+        return "48%~"
+      } else if(this.value == "ガノンドロフ"){
+        return "60%~"
+      } else if(this.value == "ミュウツー"){
+        return "45%~"
+      } else if(this.value == "ロイ/クロム"){
+        return "51%~"
+      } else if(this.value == "Mr.ゲーム＆ウォッチ"){
+        return "40%~"
+      } else if(this.value == "メタナイト"){
+        return "44%~"
+      } else if(this.value == "ピット/ブラックピット"){
+        return "51%~"
+      } else if(this.value == "ゼロスーツサムス"){
+        return "45%~"
+      } else if(this.value == "ワリオ"){
+        return "55%~"
+      } else if(this.value == "スネーク"){
+        return "56%~"
+      } else if(this.value == "アイク"){
+        return "56%~"
+      } else if(this.value == "ゼニガメ"){
+        return "41%~"
+      } else if(this.value == "フシギソウ"){
+        return "51%~"
+      } else if(this.value == "リザードン"){
+        return "61%~"
+      } else if(this.value == "ディディーコング"){
+        return "47%~"
+      } else if(this.value == "リュカ"){
+        return "50%~"
+      } else if(this.value == "ソニック"){
+        return "47%~"
+      } else if(this.value == "デデデ"){
+        return "62%~"
+      } else if(this.value == "ピクミン＆オリマー"){
+        return "42%~"
+      } else if(this.value == "ルカリオ"){
+        return "49%~"
+      } else if(this.value == "ロボット"){
+        return "52%~"
+      } else if(this.value == "トゥーンリンク"){
+        return "50%~"
+      } else if(this.value == "ウルフ"){
+        return "50%~"
+      } else if(this.value == "むらびと"){
+        return "49%~"
+      } else if(this.value == "ロックマン"){
+        return "55%~"
+      } else if(this.value == "Wii Fit トレーナー"){
+        return "50%~"
+      } else if(this.value == "Wii Fit トレーナー腹式呼吸"){
+        return "53%~"
+      } else if(this.value == "ロゼッタ＆チコ"){
+        return "44%~"
+      } else if(this.value == "リトル・マック"){
+        return "47%~"
+      } else if(this.value == "ゲッコウガ"){
+        return "49%~"
+      } else if(this.value == "パルテナ"){
+        return "49%~"
+      } else if(this.value == "パックマン"){
+        return "49%~"
+      } else if(this.value == "ルフレ"){
+        return "52%~"
+      } else if(this.value == "シュルク通常/疾"){
+        return "51%~"
+      } else if(this.value == "シュルク翔/斬"){
+        return "44%~"
+      } else if(this.value == "シュルク盾"){
+        return "162%~"
+      } else if(this.value == "シュルク撃"){
+        return "27%~"
+      } else if(this.value == "クッパJr."){
+        return "54%~"
+      } else if(this.value == "ダックハント"){
+        return "47%~"
+      } else if(this.value == "リュウ/ケン"){
+        return "51%~"
+      } else if(this.value == "クラウド"){
+        return "54%~"
+      } else if(this.value == "カムイ"){
+        return "53%~"
+      } else if(this.value == "ベヨネッタ"){
+        return "45%~"
+      } else if(this.value == "インクリング"){
+        return "50%~"
+      } else if(this.value == "リドリー"){
+        return "56%~"
+      } else if(this.value == "シモン/リヒター"){
+        return "56%~"
+      } else if(this.value == "キングクルール"){
+        return "67%~"
+      } else if(this.value == "しずえ"){
+        return "47%~"
+      } else if(this.value == "ガオガエン"){
+        return "61%~"
+      } else if(this.value == "パックンフラワー"){
+        return "55%~"
+      } else if(this.value == "ジョーカー"){
+        return "49%~"
+      } else if(this.value == "勇者"){
+        return "53%~"
+      } else if(this.value == "勇者バイキルト"){
+        return "49%~"
+      } else if(this.value == "勇者ピオリム"){
+        return "35%~"
+      } else if(this.value == "バンジョー＆カズーイ"){
+        return "56%~"
+      } else if(this.value == "テリー"){
+        return "54%~"
+      } else if(this.value == "べレト/ベレス"){
+        return "52%~"
+      } else if(this.value == "ミェンミェン"){
+        return "56%~"
+      } else if(this.value == "スティーブ"){
+        return "50%~"
+      } else if(this.value == "セフィロス"){
+        return "41%~"
+      } else if(this.value == "格闘Mii"){
+        return "51%~"
+      } else if(this.value == "剣術Mii"){
+        return "54%~"
+      } else if(this.value == "射撃Mii"){
+        return "55%~"
+      } else {
+        return "-"
+      }
+    },
+
+    poke2: function() {
+      if(this.value == "マリオ"){
+        return "67%~"
+      } else if(this.value == "ドンキーコング"){
+        return "83%~"
+      } else if(this.value == "リンク"){
+        return "71%~"
+      } else if(this.value == "サムス/ダークサムス"){
+        return "73%~"
+      } else if(this.value == "ヨッシー"){
+        return "70%~"
+      } else if(this.value == "カービィ"){
+        return "57%~"
+      } else if(this.value == "フォックス"){
+        return "57%~"
+      } else if(this.value == "ピカチュウ"){
+        return "56%~"
+      } else if(this.value == "ルイージ"){
+        return "67%~"
+      } else if(this.value == "ネス"){
+        return "65%~"
+      } else if(this.value == "キャプテン・ファルコン"){
+        return "71%~"
+      } else if(this.value == "プリン"){
+        return "51%~"
+      } else if(this.value == "ピーチ/デイジー"){
+        return "63%~"
+      } else if(this.value == "クッパ"){
+        return "88%~"
+      } else if(this.value == "アイスクライマー"){
+        return "64%~"
+      } else if(this.value == "シーク"){
+        return "58%~"
+      } else if(this.value == "ゼルダ"){
+        return "61%~"
+      } else if(this.value == "ドクターマリオ"){
+        return "67%~"
+      } else if(this.value == "ピチュー"){
+        return "47%~"
+      } else if(this.value == "ファルコ"){
+        return "58%~"
+      } else if(this.value == "マルス/ルキナ"){
+        return "63%~"
+      } else if(this.value == "こどもリンク"){
+        return "62%~"
+      } else if(this.value == "ガノンドロフ"){
+        return "77%~"
+      } else if(this.value == "ミュウツー"){
+        return "58%~"
+      } else if(this.value == "ロイ/クロム"){
+        return "66%~"
+      } else if(this.value == "Mr.ゲーム＆ウォッチ"){
+        return "54%~"
+      } else if(this.value == "メタナイト"){
+        return "58%~"
+      } else if(this.value == "ピット/ブラックピット"){
+        return "66%~"
+      } else if(this.value == "ゼロスーツサムス"){
+        return "59%~"
+      } else if(this.value == "ワリオ"){
+        return "70%~"
+      } else if(this.value == "スネーク"){
+        return "71%~"
+      } else if(this.value == "アイク"){
+        return "72%~"
+      } else if(this.value == "ゼニガメ"){
+        return "55%~"
+      } else if(this.value == "フシギソウ"){
+        return "66%~"
+      } else if(this.value == "リザードン"){
+        return "77%~"
+      } else if(this.value == "ディディーコング"){
+        return "62%~"
+      } else if(this.value == "リュカ"){
+        return "65%~"
+      } else if(this.value == "ソニック"){
+        return "61%~"
+      } else if(this.value == "デデデ"){
+        return "80%~"
+      } else if(this.value == "ピクミン＆オリマー"){
+        return "55%~"
+      } else if(this.value == "ルカリオ"){
+        return "63%~"
+      } else if(this.value == "ロボット"){
+        return "71%~"
+      } else if(this.value == "トゥーンリンク"){
+        return "64%~"
+      } else if(this.value == "ウルフ"){
+        return "64%~"
+      } else if(this.value == "むらびと"){
+        return "64%~"
+      } else if(this.value == "ロックマン"){
+        return "70%~"
+      } else if(this.value == "Wii Fit トレーナー"){
+        return "66%~"
+      } else if(this.value == "Wii Fit トレーナー腹式呼吸"){
+        return "69%~"
+      } else if(this.value == "ロゼッタ＆チコ"){
+        return "58%~"
+      } else if(this.value == "リトル・マック"){
+        return "62%~"
+      } else if(this.value == "ゲッコウガ"){
+        return "63%~"
+      } else if(this.value == "パルテナ"){
+        return "64%~"
+      } else if(this.value == "パックマン"){
+        return "64%~"
+      } else if(this.value == "ルフレ"){
+        return "66%~"
+      } else if(this.value == "シュルク通常/疾"){
+        return "67%~"
+      } else if(this.value == "シュルク翔/斬"){
+        return "60%~"
+      } else if(this.value == "シュルク盾"){
+        return "188%~"
+      } else if(this.value == "シュルク撃"){
+        return "40%~"
+      } else if(this.value == "クッパJr."){
+        return "70%~"
+      } else if(this.value == "ダックハント"){
+        return "61%~"
+      } else if(this.value == "リュウ/ケン"){
+        return "69%~"
+      } else if(this.value == "クラウド"){
+        return "69%~"
+      } else if(this.value == "カムイ"){
+        return "68%~"
+      } else if(this.value == "ベヨネッタ"){
+        return "59%~"
+      } else if(this.value == "インクリング"){
+        return "65%~"
+      } else if(this.value == "リドリー"){
+        return "72%~"
+      } else if(this.value == "シモン/リヒター"){
+        return "73%~"
+      } else if(this.value == "キングクルール"){
+        return "83%~"
+      } else if(this.value == "しずえ"){
+        return "62%~"
+      } else if(this.value == "ガオガエン"){
+        return "78%~"
+      } else if(this.value == "パックンフラワー"){
+        return "73%~"
+      } else if(this.value == "ジョーカー"){
+        return "64%~"
+      } else if(this.value == "勇者"){
+        return "69%~"
+      } else if(this.value == "勇者バイキルト"){
+        return "65%~"
+      } else if(this.value == "勇者ピオリム"){
+        return "54%~"
+      } else if(this.value == "バンジョー＆カズーイ"){
+        return "72%~"
+      } else if(this.value == "テリー"){
+        return "72%~"
+      } else if(this.value == "べレト/ベレス"){
+        return "67%~"
+      } else if(this.value == "ミェンミェン"){
+        return "72%~"
+      } else if(this.value == "スティーブ"){
+        return "64%~"
+      } else if(this.value == "セフィロス"){
+        return "55%~"
+      } else if(this.value == "格闘Mii"){
+        return "65%~"
+      } else if(this.value == "剣術Mii"){
+        return "68%~"
+      } else if(this.value == "射撃Mii"){
+        return "70%~"
+      } else {
+        return "-"
+      }
+    }
   }
 };
 </script>
